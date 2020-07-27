@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+
+
+<head>
+
+
+
+    <meta charset="utf-8">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+
+
+
+    <title>Portfolio Analysis - Cloud Scale QA</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/step-form.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+
+    <!--[if lt IE 9]>
+
+
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/16c2dd0d8a.js"></script>
+<script src="Scripts/loginscript.js"></script>
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+    <header class="reports">
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+
+
+
+            <div class="container">
+
+
+
+                <div class="navbar-header">
+
+
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                    </button>
+
+
+
+                    <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand">
+
+                        <img src="assets/images/logo.png">
+
+                    </a>
+
+
+
+                </div>
+
+
+
+                <div class="collapse navbar-collapse navbar-right" id="navbar1">
+
+
+                        <div class="nav navbar-nav menu-container">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Our Services</a>
+                                        <ul>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="test-strategy.html">Test Strategy</a></li>
+                                                    <li><a href="functional-testing.html">Functional Testing</a></li>
+                                                    <li><a href="agile-testing.html">Agile Testing</a></li>
+                                                    <li><a href="accessibility-testing.html">Accessibility Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="test-automation.html">Test Automation</a></li>
+                                                    <li><a href="api-testing.html">API Testing</a></li>
+                                                    <li><a href="mobility-testing.html">Mobility Testing</a></li>
+                                                    <li><a href="performance-testing.html">Performance Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="security-testing.html">Security Testing</a></li>
+                                                    <li><a href="dwh-etl-testing.html">DWH and ETL Testing</a></li>
+                                                    <li><a href="iot-testing.html">IOT Testing</a></li>
+                                                    <li><a href="digital-assurance.html">Digital Assurance</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="sdet-talent.html">SDET Talent</a></li>
+                                                    <li><a href="liquid-qa-workforce.html">Liquid QA Workforce</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="our-edge.html">Our Edge</a></li>
+                                    <li><a href="#">DIY Assessment</a>
+                                        <ul>
+                                            <li><a href="reports-suitability-analysis.html">Automation Suitability Analysis</a></li>
+                                            <li><a href="reports-roi.html">Test Automation ROI calculator</a></li>  
+                                            <li><a href="reports-gap-analysis.html">CI/CD Maturity Assessment</a></li>
+                                            <li><a href="reports-automation-tool.html">Test Automation Tool Assessment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a style="cursor: pointer;"  onclick="devcenter()">Dev Center</a></li>
+                                    <li><a href="https://medium.com/cloudscale-qa">Blog</a></li>
+                                     <li >
+                                        <a id="loginbtn" style="display:none;" data-fancybox data-width="600px" data-type="ajax" data-src="login-signup-modal.html" href="javascript:;" class="btn btn-custom btn-inverse fancy-popup">Login</a>
+                                        
+                                    </li>
+                                    <li id="logoutbtn" style="display:none;">
+                                     <a  data-width="600px"   class="btn btn-custom btn-inverse fancy-popup" onclick="logout()">Logout</a>
+                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </nav>
+
+
+
+    </header>
+
+
+
+    <section class="reports-head">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <h2 class="reports-title">Automation Suitability Analysis</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="results-portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="left-text">
+                            <h3>Get Your Automation Suitability Analysis</h3>
+                            <p> An unbelievably-handy DIY assessment tool that can swiftly and smoothly plot the applications of the client into Low Cost-Low Risk, Low Cost-High Risk, High Cost-Low Risk, High Cost-High Risk quadrants. It does not miss any dots, mind you!</p>
+                            <a href="javascript:;" class="download-report-btn">Download sample report</a>
+                            <a href="suitability-analysis.html" class="download-report-btn">Start Your Suitability Analysis</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="right-text">
+                            <img src="assets/images/Monitor.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dev-resources results-resources">
+    
+            <div class="container">
+    
+                <h1 class="section-title">Further read our automation success stories and capabilities</h1>
+    
+                <div class="row">
+    
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+    
+                        <div class="resource-item wow fadeInUp">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-7.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>Using Selenium to Test Mobile? Meet Appium!</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <div class="company-details">
+                                    <img src='assets/images/companies/mslogo.png'>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+    
+                        <div class="resource-item wow fadeInUp">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-5.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>Using Selenium to Test Mobile? Meet Appium!</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <div class="company-details">
+                                    <img src='assets/images/companies/Accenture.png'>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+    
+                        <div class="resource-item wow fadeInUp">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-6.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>Using Selenium to Test Mobile? Meet Appium!</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <div class="company-details">
+                                    <img src='assets/images/companies/pramati.png'>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+        <section class="reports-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <h2 class="reports-title">Reach Us</h2>
+                        <h3 class="reports-email">murali@cloudscaleqa.com</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/bootstrap.js"></script>
+
+    <script src="assets/js/wow.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/remodal.js"></script>
+
+    <script src="assets/js/svgImage.js"></script>
+
+    <script>
+        jQuery(window).scroll(function() {
+
+            if (jQuery("header nav").hasClass("affix")) {
+
+                jQuery('.navbar-brand img').attr('src', 'assets/images/logo-black.png');
+
+            } else {
+
+                jQuery('.navbar-brand img').attr('src', 'assets/images/logo.png');
+
+            }
+
+        });
+    </script>
+
+</body>
+
+
+
+
+
+</html>

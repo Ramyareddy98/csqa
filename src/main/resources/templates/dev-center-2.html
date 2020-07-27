@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+
+
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+
+						  
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+														 
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png" />
+
+
+
+    <title>DevCenter - Cloud ScaleQA</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+
+    <!--[if lt IE 9]>
+
+
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/16c2dd0d8a.js"></script>
+
+<script src="https://apis.google.com/js/platform.js?onload=onLoadGoogle" ></script>
+<script src="Scripts/loginscript.js"></script>
+</head>
+
+
+
+
+
+
+
+<body onload="onLoadGoogle">
+ 
+
+
+
+
+    <header>
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+
+
+
+            <div class="container">
+
+
+
+                <div class="navbar-header">
+
+
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                        <span class="icon-bar"></span>
+
+
+
+                    </button>
+
+
+
+					<a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand"> <img
+						src="assets/images/logo.png"></img>
+
+					</a>
+
+
+
+                </div>
+
+
+
+                <div class="collapse navbar-collapse navbar-right" id="navbar1">
+
+
+                        <div class="nav navbar-nav menu-container">
+                            <div class="menu">
+                                <ul>
+<!--                                     <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Our Services</a>
+                                        <ul>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="test-strategy.html">Test Strategy</a></li>
+                                                    <li><a href="functional-testing.html">Functional Testing</a></li>
+                                                    <li><a href="agile-testing.html">Agile Testing</a></li>
+                                                    <li><a href="accessibility-testing.html">Accessibility Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="test-automation.html">Test Automation</a></li>
+                                                    <li><a href="api-testing.html">API Testing</a></li>
+                                                    <li><a href="mobility-testing.html">Mobility Testing</a></li>
+                                                    <li><a href="performance-testing.html">Performance Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="security-testing.html">Security Testing</a></li>
+                                                    <li><a href="dwh-etl-testing.html">DWH and ETL Testing</a></li>
+                                                    <li><a href="iot-testing.html">IOT Testing</a></li>
+                                                    <li><a href="digital-assurance.html">Digital Assurance</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li><a href="sdet-talent.html">SDET Talent</a></li>
+                                                    <li><a href="liquid-qa-workforce.html">Liquid QA Workforce</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="our-edge.html">Our Edge</a></li>
+                                    <li><a href="#">DIY Assessment</a>
+                                        <ul>
+                                              <li><a href="reports-suitability-analysis.html">Automation Suitability Analysis</a></li>
+                                            <li><a href="reports-roi.html">Test Automation ROI calculator</a></li>  
+                                            <li><a href="reports-gap-analysis.html">CI/CD Maturity Assessment</a></li>
+                                            <li><a href="reports-automation-tool.html">Test Automation Tool Assessment</a></li>
+                                       </ul>
+                                    </li> -->
+                                    <li class="active"><a style="cursor: pointer;"  onclick="devcenter()">Dev Center</a></li>
+                                   <li><a target="_blank" href="https://medium.com/cloudscaleqa">Blog</a></li>
+                                   <li><a href="about-loop.html">About Loop</a></li>
+                               		<li ><a id="loginbtn" style="display:none;" data-fancybox="group" data-width="600px" data-type="ajax" data-src="login-signup-modal.html" href="javascript:;" class="btn btn-custom btn-inverse fancy-popup">Login</a>
+                                        
+                                    </li>
+                                    <li id="logoutbtn" style="display:none;">
+                                     <a  data-width="600px"   class="btn btn-custom btn-inverse fancy-popup" onclick="devcenterLogout()">Logout</a>
+                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </nav>
+
+
+
+    </header>
+
+
+
+    <section class="banner dev-banner my-tool-assesment-bg touch">
+
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="row">
+
+                        <div class="assesment-blk">
+
+                            <div class="col-md-10 col-md-offset-1">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+
+                                        <div class="assesment-user-blk">
+
+                                            <div class="avatar-section">
+
+                                                <div class="avatar-img">
+
+                                                    <img id="userImage" th:src="${userImage}" alt=""></img>
+
+                                                </div>
+
+
+
+                                                <div class="avatar-info">
+
+                                                    <div id="avatarnameid" class="avatar-name">
+
+                                                     <span th:text="${firstName}"></span>
+
+                                                    </div>
+
+                                                    <!-- <div class="avatar-des">
+
+                                                        QA Analyst
+
+                                                    </div> -->
+
+                                                </div>
+
+                                            </div>
+
+                                            <div th:if="${null!=companyName}" class="avatar-c-info">
+
+                                                <span class="avatar-light"> Company: </span>
+
+                                                <span th:text="${companyName}" class="avatar-bold" > </span>
+
+                                            </div>
+
+                                            <div class="avatar-c-info">
+
+                                                <span class="avatar-light"> Email: </span>
+
+                                                <span th:text="${email}" class="avatar-bold"  >  </span>
+
+                                            </div>
+
+                                            <div  th:if="${null!=mobile}"  class="avatar-c-info">
+
+                                                <span class="avatar-light"> Phone Number: </span>
+
+                                                <span th:text="${mobile}" class="avatar-bold"> </span>
+
+                                            </div>
+
+
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="my-tool-content">
+
+                                            <div class="my-tool-title">
+
+                                                <span th:text="${MessageHeader}"></span>
+
+                                            </div>
+
+                                            <div class="my-tool-desc">
+ 												<span th:text="${MessageDescription}"></span>    
+												<p> <span th:text="${MessageBottom}"></span></p>
+												<p> <span th:text="${MessageEnd}"></span></p>
+                                            </div>
+
+                                            <div class="my-assess-tool-btn">
+
+                                                <a href="automation-tool.html" class="btn btn-primary tool-o-btn"><span th:text="${buttonText}" > </span></a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="resources-tool-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="resources-tool-tabs wow fadeInUp">
+
+                        <div class="main-tabs-r">
+
+
+
+                            <!-- Nav tabs -->
+
+                            <ul class="nav nav-pills" role="tablist">
+
+                                <li role="presentation" class="active">
+
+                                    <a href="#recommended" aria-controls="recommended" role="tab" data-toggle="tab">Recommended</a>
+
+                                </li>
+
+                                <li role="presentation">
+
+                                    <a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
+
+                                </li>
+
+
+
+                            </ul>
+
+
+
+                            <!-- Tab panes -->
+
+                            <div class="tab-content">
+
+                                <div  role="tabpanel" class="tab-pane active" id="recommended">
+                             <div th:each="rownum : ${recmndrows}"> 
+
+
+                                    <div class="row">
+
+                                        <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,1,recommendedMap)}">
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img    th:src="${ toolGrpAssoService.getImgsrc(rownum,1,recommendedMap)}" class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span  th:text="${ toolGrpAssoService.getName(rownum,1,recommendedMap)}" class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul  th:each=" tool :${toolGrpAssoService.getTools(rownum,1,recommendedMap)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"> <span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                    
+
+																		  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                             <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,2,recommendedMap)}">
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img th:src="${ toolGrpAssoService.getImgsrc(rownum,2,recommendedMap)}"  class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span  th:text="${ toolGrpAssoService.getName(rownum,2,recommendedMap)}" class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul  th:each=" tool :${toolGrpAssoService.getTools(rownum,2,recommendedMap)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"> <span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                    
+
+																			
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                                 <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,3,recommendedMap)}">
+
+															  
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img th:src="${ toolGrpAssoService.getImgsrc(rownum,3,recommendedMap)}"  class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span  th:text="${ toolGrpAssoService.getName(rownum,3,recommendedMap)}" class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul  th:each=" tool :${toolGrpAssoService.getTools(rownum,3,recommendedMap)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"> <span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                    
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                   
+
+                                  
+
+                           
+
+																						
+
+																			   
+
+																		  
+
+																																			   
+
+														   
+
+																											 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+						
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																															
+
+														   
+
+																							   
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																	
+
+														   
+
+																								 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																							  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+										  
+
+													 
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																	   
+
+														   
+
+																									 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																			
+
+														   
+
+																										  
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																		 
+
+														   
+
+																									   
+
+													  
+
+																		
+
+																			   
+
+															
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																						   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																											
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+</div>
+
+													 
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																			   
+
+														   
+
+																											 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																															  
+
+														   
+
+																																		
+
+													  
+
+																		
+
+																			   
+
+															
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																
+
+														   
+
+																							  
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+										  
+
+                                </div>
+</div>
+                                <div  role="tabpanel" class="tab-pane" id="all">
+                               <div th:each="rownum : ${rows}"> 
+                                    <div  class="row">
+
+                                        <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,1,allData)}">
+
+													 
+
+															  
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img th:src="${ toolGrpAssoService.getImgsrc(rownum,1,allData)}"  class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span th:text="${ toolGrpAssoService.getName(rownum,1,allData)}"   class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul th:each=" tool :${toolGrpAssoService.getTools(rownum,1,allData)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"><span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                       
+
+																		  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+ 
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,2,allData)}" >
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img th:src="${ toolGrpAssoService.getImgsrc(rownum,2,allData)}"  class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span th:text="${ toolGrpAssoService.getName(rownum,2,allData)}"   class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul th:each=" tool :${toolGrpAssoService.getTools(rownum,2,allData)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"><span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                       
+
+																			
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+ 
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-md-4" th:if="${null!=toolGrpAssoService.getName(rownum,3,allData)}">
+
+															  
+
+                                            <div class="dev-resources-blk wow fadeInUp">
+
+                                                <div class="resources-m-title">
+
+                                                    <span class="res-img">
+
+                                                        <img th:src="${ toolGrpAssoService.getImgsrc(rownum,3,allData)}"  class="svgImage" alt=""></img>
+
+                                                    </span>
+
+                                                    <span th:text="${ toolGrpAssoService.getName(rownum,3,allData)}"   class="res-m-title">  </span>
+
+                                                </div>
+
+                                                <div class="res-m-list">
+
+                                                    <ul th:each=" tool :${toolGrpAssoService.getTools(rownum,3,allData)}" class="resources-list">
+
+                                                        <li>
+
+                                                            <a th:href="${tool.pageLink}"><span th:text="${tool.name}"> </span>
+
+                                                                <span class="next-icon">
+
+                                                                    <img src="assets/images/dev-center/next.png" alt=""></img>
+
+                                                                </span>
+
+                                                            </a>
+
+                                                        </li>
+
+                                                       
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+                                                    </ul>
+ 
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                         
+                                   
+      
+                                  
+
+                                    </div>
+
+													 
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																			   
+
+														   
+
+																											 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+						
+
+														 
+
+													  
+
+												  
+
+ </div> 
+                           
+															  
+
+																						
+
+																			   
+
+																		  
+
+																															
+
+														   
+
+																							   
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																	
+
+														   
+
+																								 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																							  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+										  
+
+													 
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																	   
+
+														   
+
+																									 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																			
+
+														   
+
+																										  
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																		 
+
+														   
+
+																									   
+
+													  
+
+																		
+
+																			   
+
+															
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																						   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																											
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+										  
+
+													 
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																			   
+
+														   
+
+																											 
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																				
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																															  
+
+														   
+
+																																		
+
+													  
+
+																		
+
+																			   
+
+															
+
+																		   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			 
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+															  
+
+																						
+
+																			   
+
+																		  
+
+																																
+
+														   
+
+																							  
+
+													  
+
+																		
+
+																			   
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			  
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+															
+
+																			   
+
+																						
+
+																														
+
+																	   
+
+																
+
+															 
+
+														 
+
+													  
+
+												  
+
+											  
+
+										  
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+           
+
+           
+
+          
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+	<section class="get-in-touch">
+
+
+
+
+		<div class="container">
+
+
+
+
+			<h1 class="section-title wow fadeInUp">Get In Touch With Us</h1>
+
+
+
+
+			<h3 class="sub-title wow fadeInUp">We will be happy to help you
+				with any test automation solution that you need specific to your
+				context... Let us reach out to you!</h3>
+
+
+
+
+			<form>
+
+				<div class="row">
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="firstNameId" type="text" name="fname"
+								class="form-control" placeholder="First Name" required="true"></input>
+						</div>
+						<div id="errorMsgfname" style="color: red;"></div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="lastNameId" type="text" name="lname"
+								class="form-control" placeholder="Last Name" required="true"></input>
+
+						</div>
+						<div id="errorMsglname" style="color: red;"></div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="companyId" type="text" name="company"
+								class="form-control" placeholder="Company" required="true"></input>
+
+						</div>
+						<div id="errorMsgCompany" style="color: red;"></div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="designationId" type="text" name="title"
+								class="form-control" placeholder="Designation/Title"
+								required="true"></input>
+
+						</div>
+						<div id="errorMsgDesgntn" style="color: red;"></div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="emailId" type="text" name="email" class="form-control"
+								placeholder="Email" required="true"></input>
+
+						</div>
+						<div id="errorMsgEmail" style="color: red;"></div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group wow fadeInUp"
+							style="height: 35px !important">
+
+							<input id="mobileId" type="text" name="phone"
+								class="form-control" placeholder="Phone Number" required="true"></input>
+
+						</div>
+						<div id="errorMsgMobile" style="color: red;"></div>
+					</div>
+
+				</div>
+
+
+			</form>
+
+			<button class="btn btn-custom wow fadeInUp" onclick="sendEmail()">Send</button>
+
+
+
+		</div>
+
+
+
+
+	</section>
+
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-8">
+
+		    <p>Copyrights @ 2019 CloudScaleQA (A unit of CodeTantra Tech Solutions Pvt. Ltd.). All Rights Reserved.</p>
+
+                </div>
+
+                <div class="col-sm-4 text-right">
+
+                    <a target="_blank" href="https://www.facebook.com/Cloudscaleqa-2000091783586389/">
+                        <img src='assets/images/Facebook.svg'></img>
+                    </a>
+
+                    <a target="_blank" href="https://twitter.com/CloudScaleQA">
+                        <img src='assets/images/Twitter.svg'></img>
+                    </a>
+
+                    <a target="_blank" href="https://www.linkedin.com/company/cloudscaleqa/">
+                        <img src='assets/images/linkedin.svg'></img>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <script src="assets/js/wow.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/remodal.js"></script>
+
+    <script src="assets/js/svgImage.js"></script>
+
+    <script>
+    $(document).ready(function(){
+		   console.log("in ready===============");
+		   firstmethod();
+		});
+
+        jQuery(window).scroll(function () {
+
+            if (jQuery("header nav").hasClass("affix")) {
+
+                jQuery('.navbar-brand img').attr('src', 'assets/images/logo-black.png');
+
+            } else {
+
+                jQuery('.navbar-brand img').attr('src', 'assets/images/logo.png');
+
+            }
+
+        });
+        function onLoadGoogle() {
+        	console.log("on load google in html");
+        		
+        		 gapi.load('auth2', function() {
+        		      gapi.auth2.init({client_id: '467617503613-usrsjj1siq7isun7so4kbeui67tcnab0.apps.googleusercontent.com'});
+        		    });
+        			
+        			   gapi.signin2.render('gdbtn', {
+        			        'scope': 'profile email',
+        			        'width': 100,
+        			        'height': 44,
+        			        'longtitle': true,
+        			        'theme': 'dark',
+        			        'onsuccess': onSignIn
+        			      });
+        	}
+    </script>
+
+</body>
+
+
+
+
+
+
+
+</html>

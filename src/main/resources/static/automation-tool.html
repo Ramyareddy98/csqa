@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+    <title>Automation Tool Assessment - CloudScaleQA</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!--build:css assets/css/step-form.min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/tyle.css">
+    <link rel="stylesheet" href="assets/css/step-form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+   <script src="Scripts/loginscript.js"> </script>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
+</head>
+
+<body>
+    
+    
+    <header>
+
+        <nav class="navbar navbar-default affix">
+
+            <div class="container">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="navbar-header">
+
+                        <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand"><img src="assets/images/logo-black.png"></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 page-title">
+                    <h3>Automation Tool Assessment</h3>
+                </div>
+                <div class="col-md-4 col-lg-4 page-close">
+                    <div class="close-steps">
+                        <a href='index.html'><img src='assets/images/close.png'></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="form-steps">
+            <ul class="survey-sections big-captions">
+                <li class="active"><span class="sec-num">1</span><a>Information</a></li>
+            </ul>
+
+    </section>
+    <section class="tyle-area gap-analysis">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 sec-1" >
+                    <div class="tyle-container">
+                        <div class="item active f-e">
+                            <h3>Please be informed</h3>
+								<h4 align="left">
+									<ul>
+										<li><b>A.</b> This is free of cost!</li>
+										<br>
+										<li><b>B.</b> You just need to answer a series of questions to receive recommendation on your test automation tool-stack.</li>
+										<br>
+										<li><b>C.</b> This survey has 3 sections. You can come back to context section during your survey but that will reset your answers in technical section.</li>
+										<br>
+										<li><b>D.</b> You may take the assessment again, any number of times</li>
+										<br>
+										<li><b>E.</b> If you are using a tab or mobile device right now, we recommend you to use landscape mode for better UI experience.</li>
+										<br>
+										<li>(You may need to enable auto-screen-rotation).</li>
+									</ul>
+								</h4>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade  in active" id='current-skin-care'> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="step-buttons-container">
+    <div class="step-nav">
+	<button class="form-item-changer nav-btn next-btn" onClick="window.location='automation-tool-1.html'">Start</button>
+	</div>
+    </section>
+    <!--build:js assets/js/step-form.min.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/tyle.js"></script>
+   
+
+    <!--endbuild-->
+    <script>
+  
+    localStorage.setItem("onFinishOne", "auto1")
+        $(document).ready(function () {
+            $('.tyle-container').tyle({
+                showProgressCount: true,
+                onFinish:function(){
+                	localStorage.setItem("onFinishOne", "auto1")
+                    var favorite = null;
+                    $.each($("input[name='generic_auttype']:checked"), function(){  
+                        if($(this).val() == "Mobile")
+                        {
+                            favorite = $(this).val();
+                        }      
+                    });
+                    if (favorite == "Mobile")
+                    {
+                        window.location='automation-tool-1.html';
+                    } else {
+                        window.location='automation-tool-1.html';
+                    }
+                    //console.log(document.querySelector('input[name="generic_auttype"]:checked').value);
+                    // window.location='automation-tool-2.html'
+                }
+            });
+        })
+        $('.skin-issues .form-item-changer').click(function(){
+            console.log("hdb")
+           $(this).children('.selected').css({display:"block"});
+           $(this).siblings().children('.selected').css({display:"none"});
+        }) 
+        </script>
+</body>
+
+</html>

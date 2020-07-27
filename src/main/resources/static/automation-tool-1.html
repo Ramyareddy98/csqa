@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+    <title>Automation Tool Assessment - CloudScaleQA</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!--build:css assets/css/step-form.min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/tyle.css">
+    <link rel="stylesheet" href="assets/css/step-form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+   <script src="Scripts/loginscript.js"> </script>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
+</head>
+
+<body>
+    
+    
+    <header>
+
+        <nav class="navbar navbar-default affix">
+
+            <div class="container">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="navbar-header">
+
+                        <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand"><img src="assets/images/logo-black.png"></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 page-title">
+                    <h3>Automation Tool Assessment</h3>
+                </div>
+                <div class="col-md-4 col-lg-4 page-close">
+                    <div class="close-steps">
+                        <a href='index.html'><img src='assets/images/close.png'></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="form-steps">
+            <ul class="survey-sections big-captions">
+                <li class="active"><span class="sec-num">1</span><a>Generic Context</a></li>
+                <li ><span class="sec-num">2</span><a >Technical Context</a></li>
+                <li><span class="sec-num">3</span><a >Budget</a></li>
+            </ul>
+
+    </section>
+    <section class="tyle-area gap-analysis">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 sec-1" >
+                    <div class="tyle-container">
+                        <div id ="ques11" class="item active f-e">
+                            <h3>Select the context for which you are assessing the test automation tool</h3>
+                            <div class="user-intro" >
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_context-1" name="generic_context" value="InSprint">
+                                        <label for="generic_context-1">In Sprint </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_context-2" name="generic_context"value="Release Testing" checked>
+                                        <label for="generic_context-2">Release Testing </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_context-3" name="generic_context" value="Both">
+                                        <label for="generic_context-3">Both </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ques12" class="item">
+                            <h3>Which team will be owning the test automation of the application?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_autowner-1" name="generic_autowner" value="dev">
+                                        <label for="generic_autowner-1">Dev Team</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_autowner-2" name="generic_autowner"value="qa" checked>
+                                        <label for="generic_autowner-2">Quality/ Testing Team</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="generic_autowner-3" name="generic_autowner" value="ba">
+                                        <label for="generic_autowner-3">Business Team </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id ="ques13" class="item">
+                            <h3>Select all the categories you want to automate?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype-1" name="generic_auttype" value="static_analysis"  >
+                                        <label for="generic_auttype-1">Static Code Analysis</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype-2" name="generic_auttype" value="unit_testing"  >
+                                        <label for="generic_auttype-2">Unit Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype-3" name="generic_auttype" value="ui_web" checked  >
+                                        <label for="generic_auttype-3">Web (browser based) UI Tests</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype1-4" name="generic_auttype" value="ui_desktop"  >
+                                        <label for="generic_auttype1-4">Desktop UI Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype1-5" name="generic_auttype" value="ui_mobile" >
+                                        <label for="generic_auttype1-5">Mobile UI Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype1-6" name="generic_auttype" value="perf" >
+                                        <label for="generic_auttype1-6">Performance Tests</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="generic_auttype1-7" name="generic_auttype" value="api" >
+                                        <label for="generic_auttype1-7">API Tests</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade  in active" id='current-skin-care'> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="step-buttons-container">
+    <div class="step-nav">
+	<button class="form-item-changer nav-btn prev-btn" btn-type="prev"  id="myBtn" onclick="back()" >Back</button>
+	<button class="form-item-changer nav-btn next-btn" onclick="answers1()">Next</button>
+	</div>
+    </section>
+    <!--build:js assets/js/step-form.min.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/tyle.js"></script>
+   
+
+    <!--endbuild-->
+    <script>
+  
+    localStorage.setItem("onFinishOne", "auto1")
+        $(document).ready(function () {
+            $('.tyle-container').tyle({
+                showProgressCount: true,
+                onFinish:function(){
+                	localStorage.setItem("onFinishOne", "auto1")
+                    var favorite = null;
+                    $.each($("input[name='generic_auttype']:checked"), function(){  
+                        if($(this).val() == "Mobile")
+                        {
+                            favorite = $(this).val();
+                        }      
+                    });
+                    if (favorite == "Mobile")
+                    {
+                        window.location='automation-tool-2.html';
+                    } else {
+                        window.location='automation-tool-2.html';
+                    }
+                    //console.log(document.querySelector('input[name="generic_auttype"]:checked').value);
+                    // window.location='automation-tool-2.html'
+                }
+            });
+        })
+        $('.skin-issues .form-item-changer').click(function(){
+            console.log("hdb")
+           $(this).children('.selected').css({display:"block"});
+           $(this).siblings().children('.selected').css({display:"none"});
+        }) 
+        </script>
+</body>
+
+</html>

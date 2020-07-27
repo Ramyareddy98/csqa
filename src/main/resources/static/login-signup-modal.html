@@ -1,0 +1,228 @@
+
+
+<head>
+
+<meta name="google-signin-client_id"
+	content="467617503613-usrsjj1siq7isun7so4kbeui67tcnab0.apps.googleusercontent.com">
+<script src="Scripts/loginscript.js"></script>
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoadGoogle"
+	async defer></script>
+</head>
+<body>
+
+
+	<div class="container-fluid">
+
+		<div class="login-signup">
+
+			<div class="row">
+
+				<div class="tab-content">
+
+					<div class="tab-pane fade in active" id='login'>
+
+						<div class="col-sm-6 login-sec">
+							<div id="invalidcredId" style="font-size: 20px; color: red;"></div>
+							<h3>Login</h3>
+
+							<form>
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" id='username'
+										placeholder="Username" required>
+									<div id="usernamedivid" style="color: red;"></div>
+								</div>
+
+								<div class="form-group">
+
+									<input type="password" class="form-control" id='password'
+										placeholder="Password" required>
+									<div id="passworddivid" style="color: red;"></div>
+								</div>
+
+								<!-- <div class="check">
+
+									<div class="squaredThree">
+
+										<input type="checkbox" value="None" id="squaredThree"
+											name="check" /> <label for="squaredThree"></label>
+
+
+
+									</div>
+
+									<p class="content">Keep me signed in</p>
+
+								</div> -->
+
+
+
+							</form>
+							<button onclick="onLogin()" class="btn btn-custom">
+								Login</button>
+						</div>
+
+						<div class="col-sm-6 misc-sec">
+
+
+
+							<p>If you don't already have an account click the button
+								below to create your account.</p>
+
+							<button class="btn btn-custom" data-toggle='tab' onclick="clearSignUpdata()" href="#signup">Create
+								Account</button>
+
+							<h4>or</h4>
+
+							<button class="btn btn-custom fb" perms="user_about_me,email"
+								onclick="login()">
+								<img src='assets/images/icons/Group 17.svg' class="svgImage">Sign
+								In facebook
+							</button>
+
+							<br> <br>
+							<div id="gdbtn" onclick="googleSignIn()"></div>
+						</div>
+
+
+
+						<div class="col-sm-12 forgot-pass-link">
+
+							<h4>
+								So you can't get in to your account? Did you <a href='#'>forget
+									your password?</a>
+							</h4>
+
+						</div>
+
+					</div>
+
+					<div class="tab-pane fade" id='signup'>
+
+						<div class="col-sm-6 signup-sec">
+<div id="signupinvalidcredId" style="font-size: 20px; color: red;"></div>
+							
+							<h3>Sign Up</h3>
+
+							<form>
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" id='fname'
+										placeholder="First name">
+									<div id="divfnameId" style="color: red;"></div>
+								</div>
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" id='lname'
+										placeholder="Last name">
+									<div id="divlnameId" style="color: red;"></div>
+								</div>
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" id='email'
+										placeholder="Email">
+									<div id="divemailId" style="color: red;"></div>
+								</div>
+
+								<div class="form-group">
+
+									<input class="form-control" id='mobile' placeholder="Mobile"
+										type="number" >
+									<div id="divmobileId" style="color: red;"></div>
+								</div>
+								<div class="form-group">
+
+									<input type="text" class="form-control" id='companyname'
+										placeholder="Company" required>
+									<div id="divcompanyId" style="color: red;"></div>
+								</div>
+								<div class="form-group">
+
+									<input type="password" class="form-control" id='cpassword'
+										placeholder="Password" required>
+									<div id="divpassId" style="color: red;"></div>
+								</div>
+								<div class="form-group">
+
+									<input type="password" class="form-control" id='confirmpassword'
+										placeholder="Confirm Password" required>
+									<div id="divcpassId" style="color: red;"></div>
+								</div>
+
+								<!-- <p class="agree">By signing up, I agree to terms</p> -->
+
+							</form>
+							<button onclick="createUser()" class="btn btn-custom">Sign
+								up</button>
+
+						</div>
+
+						<div class="col-sm-6 misc-sec signup-misc">
+
+
+
+							<p>If you don't already have an account click the button
+								below to create your account.</p>
+
+							<button class="btn btn-custom" onclick="clearMessages()"
+								data-toggle='tab' href="#login">Already have an account</button>
+
+							<h4>or</h4>
+
+							<button class="btn btn-custom fb" perms="user_about_me,email"
+								onclick="login()">
+								<img src='assets/images/icons/Group 17.svg' class="svgImage">Sign
+								In facebook
+							</button>
+
+							<br> <br>
+
+							<div id="gdbtn2" onclick="googleSignIn()"></div>
+							<h4>
+								So you can't get in to your account? Did you <a href='#'>forget
+									your password?</a>
+							</h4>
+						</div>
+						<!-- 
+						<div class="col-sm-12 forgot-pass-link">
+
+						
+
+						</div> -->
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+<script src="assets/js/svgImage.js"></script>
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+	$('.close-modal').click(
+			function() {
+
+				$('.remodal-is-opened').removeClass('remodal-is-opened')
+						.addClass('remodal-is-closing');
+
+				setTimeout(function() {
+
+					$('.remodal-is-closing').removeClass('remodal-is-closing')
+							.addClass('remodal-is-closed').hide();
+
+				}, 300)
+
+			});
+</script>

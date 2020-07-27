@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4cfd6575-db48-4626-95d9-506fc3501a80">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="reportimage" class="java.lang.String"/>
+	<parameter name="datetime" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="title" class="java.lang.String"/>
+	<field name="detail" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="332" splitType="Stretch">
+			<image hyperlinkType="Reference">
+				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="-1" y="30" width="150" height="70" isPrintWhenDetailOverflows="true" forecolor="#080505" backcolor="#332923" uuid="37dfbb4f-36ec-4b4e-871e-aaa263c0324d"/>
+				<imageExpression><![CDATA["https://devcenter.cloudscaleqa.com/assets/images/logo-black2.png"]]></imageExpression>
+			</image>
+			<break>
+				<reportElement x="0" y="331" width="80" height="1" uuid="1152f837-2dc3-40fc-bfb0-423f29bad224"/>
+			</break>
+			<staticText>
+				<reportElement x="8" y="240" width="328" height="30" uuid="3b3743d1-619f-427b-8f40-2a844b605ffc"/>
+				<textElement textAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[(For your application/product portfolio)]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="11" y="290" width="95" height="30" uuid="6529cce9-28fb-44c3-a018-c06d1dfb2161"/>
+				<textFieldExpression><![CDATA[$P{datetime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="" x="4" y="210" width="551" height="50" forecolor="#00B0DE" backcolor="#FFFDFC" uuid="6830a108-885c-42f8-af86-ff7b8d4ef906"/>
+				<textElement textAlignment="Justified">
+					<font size="26" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TEST AUTOMATION SUITABILITY ANALYSIS]]></text>
+			</staticText>
+		</band>
+		<band height="750" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="390" height="48" forecolor="#00B0DE" uuid="71567688-b438-435f-aad2-5c40aa88b8ba"/>
+				<textElement textAlignment="Left" markup="none">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Automation Suitability Analysis Report]]></text>
+			</staticText>
+			<image scaleImage="RealSize" hAlign="Left" vAlign="Top" onErrorType="Blank" evaluationTime="Band">
+				<reportElement positionType="Float" mode="Transparent" x="140" y="100" width="270" height="280" uuid="09ade150-3a84-4af5-a792-9cc1b9f49104"/>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{reportimage}.getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="390" width="550" height="60" uuid="c43917a3-32c0-4b87-b3e4-d2329fe5cbf9"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Based on the answers to the questionnaire, the above graph depicts the relative cost benefit scenarios for your application portifolio. Applications with low benefit could be ignored for implementation relative to applications that are showing high benefit. We suggest that a detailed analysis be undertaken for applications that show high potential benefit. The detailed analysis should be able to project real costs and benefits in dollar terms and provide a clear ROI picture.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="480" width="198" height="21" forecolor="#00B0DE" uuid="f11c40b6-0e15-47f6-956a-6bd5efdc2a16"/>
+				<textElement markup="none">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[High Cost and High Benefit	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="480" width="170" height="21" forecolor="#00B0DE" uuid="538ffda6-83f6-4046-902c-b250bb2f0961"/>
+				<textElement markup="none">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Low Cost and High Benefit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="590" width="188" height="22" forecolor="#00B0DE" uuid="6c698afa-066d-4bb3-af11-a6dc7c858ad3"/>
+				<textElement markup="none">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Low Cost and Low Benefit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="590" width="178" height="22" forecolor="#00B0DE" uuid="15eb2aeb-ac03-4a80-a281-e629ebeebbd8"/>
+				<textElement markup="none">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[High Cost and Low Benefit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="511" width="270" height="79" uuid="2cf0fe84-e715-4fa9-8802-e5f15ed047c2"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Applications in this quadrant have both high cost and benefit from automation. Where benefits are more important for the organization irrespective of costs, automation should be taken up. In case costs are very critical, a detailed analysis should be undertaken to find ways to minimize the costs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="511" width="260" height="79" uuid="53644616-2e5c-4165-bb5a-3cfdc01f5577"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Applications in this quadrant have low cost and high benefit from automation. CIOs and CTOs should immediately start planning and budgetting excercises for these applications. Detailed ROI analysis is recommended prior to approval.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="623" width="269" height="87" uuid="03a1ee2c-72c7-413d-aae5-9ba4d18ecdf2"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Applications in this quadrant have both low cost and benefit from automation. Considering low benefit there is no compelling reason for automation. Since cost is low as well, if the rest of the suite of applications have been automated, one can select these as well for uniformity.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="621" width="261" height="89" uuid="365b0da8-9ddf-48da-8056-a0e1389b6c02"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Applications in this quadrant have high cost and low benefit from automation. These applications should never be considered for automation.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="30" width="552" height="70" uuid="509e9b32-8d7e-432c-8a55-0ec7c1de846f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Test automation and CI/CD pipeline implementations always provide great benefit to product engineering. But these benefits do not come cheap. CIOs and CTOs constrained by budgets and time to market have to choose the right candidates from their portfolio of products to get the maximum benefit. CloudScaleQA has designed this questionnaire and evaluation methodology to help CIOs and CTOs understand in a relative sense what could be the right candidates for these implementations.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="490" width="204" height="21" forecolor="#000000" uuid="d9f4492b-222f-47d5-9296-cc5e21a0a377"/>
+				<textElement markup="none">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(top right quadrant)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="289" y="490" width="204" height="21" forecolor="#000000" uuid="4a3b14b3-a6f6-44c6-a277-3db0d767aadd"/>
+				<textElement markup="none">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(bottom right quadrant)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="290" y="600" width="204" height="21" forecolor="#000000" uuid="4a02d169-a7ff-4116-a34e-7e83bc5ee1e1"/>
+				<textElement markup="none">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(top left quadrant)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="450" width="556" height="30" uuid="f25763f0-860b-4528-815c-763e255cc7a2"/>
+				<text><![CDATA[Here is how you should interpret the results shown in the above graph:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1" y="602" width="204" height="21" forecolor="#000000" uuid="b0d60163-73c8-42a8-bcf8-9ca4bed0567e"/>
+				<textElement markup="none">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(bottom left quadrant)]]></text>
+			</staticText>
+		</band>
+		<band height="361" splitType="Immediate">
+			<staticText>
+				<reportElement x="2" y="20" width="170" height="30" forecolor="#00B0DE" uuid="8a322bf2-e30e-4644-b4b3-15d1aedac4ff"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Methodology]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="20" width="190" height="30" forecolor="#00B0DE" uuid="1ef05ffa-76f0-4ede-9564-d669ec655cf4"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assumptions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="40" width="251" height="140" uuid="1b3105df-692c-41bf-85e6-b9e1525276ea"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Based on the vast years of experience of the leadership at CloudScaleQA, we have defined factors that contribute to the cost and benefit of test automation tooling. The factors and their influence on cost and benefit have been carefully calibrated after detailed analysis.  Based on mathematical calculations using the responses, we arrive at summary cost and benefit number for each application area. These numbers are projected on a graph to show relative position of each application.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="40" width="261" height="140" uuid="5f2e74ed-bb91-466e-9eff-4a8469c99cac"/>
+				<textElement textAlignment="Justified">
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[This methodology projections are relative, hence at least two applications/products should be used to get good results. The scoring is done based on generic industry data and expectation of costs are based on usage of offshore low cost location. This DIY tool will provide a general direction only and detailed analysis is required for more accurate projections.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="192" width="550" height="47" uuid="a0f1823b-2657-4498-aa19-bc72ab07e949"/>
+				<textElement textAlignment="Justified">
+					<font size="12"/>
+					<paragraph lineSpacing="AtLeast" lineSpacingSize="11.0"/>
+				</textElement>
+				<text><![CDATA[Our senior consultants can help you get a more customized test automation suitability analysis report for you based on study of many more factors.Please reach out to us so that one of our senior consultants can talk to you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="260" width="556" height="65" uuid="52efcb03-869c-4a3b-bac0-085fcf401518"/>
+				<text><![CDATA[     ]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="9" width="96" height="1" uuid="7ec21c1e-9d1b-47ea-b284-f614ca801df2"/>
+			</break>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="135">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="367" y="84" width="165" height="21" uuid="3c327427-4c87-41d2-a4c5-db308cb0c35e"/>
+				<text><![CDATA[www.cloudscaleqa.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="368" y="101" width="145" height="17" uuid="96e9f55f-a6d8-4069-941b-e5b0f0974f57"/>
+				<text><![CDATA[contact@cloudscaleqa.com]]></text>
+			</staticText>
+			<image hAlign="Right" vAlign="Bottom" onErrorType="Blank">
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="365" y="-1" width="160" height="80" uuid="fb032789-2e63-4a3d-b29f-a0acf353f110"/>
+				<imageExpression><![CDATA["https://devcenter.cloudscaleqa.com/assets/images/logo-black2.png"]]></imageExpression>
+			</image>
+		</band>
+	</lastPageFooter>
+</jasperReport>

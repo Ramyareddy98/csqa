@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+    <title>Automation Tool Assessment - CloudScaleQA</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!--build:css assets/css/step-form.min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/tyle.css">
+    <link rel="stylesheet" href="assets/css/step-form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="Scripts/loginscript.js"></script>
+     <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
+</head>
+
+<body>
+    
+    
+    <header>
+
+        <nav class="navbar navbar-default affix">
+
+            <div class="container">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="navbar-header">
+
+                        <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand"><img src="assets/images/logo-black.png"></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 page-title">
+                    <h3>Automation Tool Assessment</h3>
+                </div>
+                <div class="col-md-4 col-lg-4 page-close">
+                    <div class="close-steps">
+                        <a href='index.html'><img src='assets/images/close.png'></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="form-steps">
+            <ul class="survey-sections big-captions">
+                <li class="active"><span class="sec-num done">1</span><a sec-name="sec-1" >Generic Context</a></li>
+                <li class="active"><span class="sec-num">2</span><a sec-name="sec-2"  >Technical Context</a></li>
+                <li><span class="sec-num">3</span><a sec-name="sec-3" >Budget</a></li>
+            </ul>
+
+    </section>
+    <section class="tyle-area gap-analysis">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 sec-1" >
+                    <div class="tyle-container" id="start">
+                        <div  id="ques21" class="item active f-e">
+                            <h3>Select all the browsers you want to automate tests for?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_browsers-1" name="technical_browsers" value="chrome" checked>
+                                        <label for="technical_browsers-1">Chrome</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_browsers-2" name="technical_browsers" value="mozilla" checked>
+                                        <label for="technical_browsers-2">Mozilla</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_browsers-3" name="technical_browsers" value="ie">
+                                        <label for="technical_browsers-3">Internet Explorer</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_browsers1-5" name="technical_browsers" value="edge" >
+                                        <label for="technical_browsers1-5">Edge</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_browsers1-6" name="technical_browsers" value="safari" >
+                                        <label for="technical_browsers1-6">Safari</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       <!-- <div id="ques22"> -->
+                        <div id="ques22" class="item" >
+
+
+                            <h3>Select all the types of desktop applications you want to automate</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_desktop_apps-1" name="technical_desktop_apps" value="erp">
+                                        <label for="technical_desktop_apps-1">ERP</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_desktop_apps-2" name="technical_desktop_apps"value="pos">
+                                        <label for="technical_desktop_apps-2">Point of Sales</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_desktop_apps-3" name="technical_desktop_apps" value="standard" checked>
+                                        <label for="technical_desktop_apps-3">Standard Desktop App</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     <!--  </div> -->
+                        <!-- <div id="ques23"> -->
+                        <div id="ques23" class="item">
+
+
+
+                            <h3>Do you plan to execute desktop UI tests on cloud?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_cloudSupport-1" name="technical_cloudSupport" value="1">
+                                        <label for="technical_cloudSupport-1">Yes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_cloudSupport-2" name="technical_cloudSupport"value="0" checked>
+                                        <label for="technical_cloudSupport-2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                     <!--  </div>
+
+                      <div id="ques24"> -->
+               
+                        <div id="ques24" class="item">
+
+                            <h3>Select all the types of apps you want to automate for mobile?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobile_apps-1" name="technical_mobile_apps" value="mobile_native">
+                                        <label for="technical_mobile_apps-1">Native</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobile_apps-2" name="technical_mobile_apps"value="mobile_hybrid" checked>
+                                        <label for="technical_mobile_apps-2">Hybrid</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobile_apps-3" name="technical_mobile_apps" value="mobile_browser_based">
+                                        <label for="technical_mobile_apps-3">Browser Based</label>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <!-- </div>
+
+
+                       <div id="ques25"> -->
+                        <div id="ques25" class="item"  >
+
+                            <h3>For mobile interface, select all the OS versions on which you are expecting to test the App on?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobileOSVersion-1" name="technical_mobileOSVersion" value="ios7">
+                                        <label for="technical_mobileOSVersion-1">iOS 7.1+</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobileOSVersion-2" name="technical_mobileOSVersion"value="ios10" checked>
+                                        <label for="technical_mobileOSVersion-2">iOS 10+</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobileOSVersion-3" name="technical_mobileOSVersion" value="andr2">
+                                        <label for="technical_mobileOSVersion-3">Android 2.3+</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_mobileOSVersion-4" name="technical_mobileOSVersion" value="andr7" checked>
+                                        <label for="technical_mobileOSVersion-4">Android 7+</label>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        </div>
+                        <!-- </div> -->
+                        
+                        <div  id="ques26" class="item">
+
+
+                            <h3>Select all the target OS on which your application needs to be tested?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_targetOS-1" name="technical_targetOS" value="linux">
+                                        <label for="technical_targetOS-1">Linux </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_targetOS-2" name="technical_targetOS"value="windows" checked>
+                                        <label for="technical_targetOS-2">Windows </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_targetOS-3" name="technical_targetOS" value="mac">
+                                        <label for="technical_targetOS-3">Mac </label>
+                                    </div>
+                                </div>
+                            </div>
+                        
+</div>
+                        <div id="ques27" class="item">
+
+
+
+                            <h3>Describe your application's tech-stack by selecting appropriate options below</h3>
+                            
+								<div  id="option71" class="select-box">
+                                    <label>Programming Language</label>
+                                    <select class="basic-multiple" name="technical_techstack_programmingLanguages" id="programmingLanguages" multiple="multiple" style="width:100%">
+                                        <option value="c#">C#</option>
+                                        <option value="go">Go</option>
+                                        <option value="groovy">Groovy</option>
+                                        <option value="java">Java</option>
+                                        <option value="js">JavaScript</option>
+                                        <option value="abap">ABAP</option>
+                                        <option value="php">PHP</option>
+                                        <option value="python">Python</option>
+                                        <option value="ruby">Ruby</option>
+                                        <option value="type">Type-Script</option>
+                                        <option value="vbdotnet">VB.NET</option>
+                                      </select>
+                                </div>
+                                
+                                  
+
+
+								<div id="option72" class="select-box">
+                                    <label>Front End Technologies</label>
+                                    <select class="basic-multiple" name="technical_techstack_frontEndTechs" id="frontEndTechs" multiple="multiple" style="width:100%">
+                                        <option value="ajax">Ajax</option>
+                                        <option value="angularjs">Angular</option>
+                                        <option value="asp.net">ASP.NET</option>
+                                        <option value="backbone">Backbone</option>
+                                        <option value="bootStrap">BootStrap</option>
+                                        <option value="codejock">CodeJock</option>
+                                        <option value="ember">Ember</option>
+                                        <option value="infragistics">Infragistics</option>
+                                        <option value="jquery">jQuery</option>
+                                        <option value="oracle_forms">Oracle Forms</option>
+                                        <option value="qt">Qt</option>
+                                        <option value="reactjs">Reactjs</option>
+                                        <option value="standard_windows">Standard Windows</option>
+                                        <option value="syncfusion">Syncfusion</option>
+                                        <option value="telerik">Telerik</option>
+                                        <option value="wpf">WPF</option>
+                                        <option value="zeptojs">Zeptojs</option>
+                                      </select>
+                                </div>
+                                
+                                
+                                
+                                <div id="option73" class="select-box">
+
+
+                                    <label>Server End Technologies</label>
+                                    <select class="basic-multiple" name="technical_techstack_serverEndTechs" id="serverEndTechs" multiple="multiple" style="width:100%">
+                                        <option value=".NET">.NET</option>
+                                        <option value="Java">Java</option>
+                                        <option value="NodeJS">NodeJS</option>
+                                        <option value="PHP">PHP</option>
+                                        <option value="Scala">Scala</option>
+                                        <option value="SFDC">SFDC</option>
+                                    </select>
+                                </div>
+                                
+                                  
+                                <div id="option74" class="select-box">
+
+                                    <label>API Technology</label>
+                                    <select class="basic-multiple" name="technical_techstack_APITech" id="api" multiple="multiple" style="width:100%">
+                                        <option value="rest">Rest</option>
+                                        <option value="soap">Soap</option>
+                                    </select>
+                                </div>
+                                
+                        </div>
+                        <div id="ques28" class="item">
+
+                            <h3>Select all the applications or protocols for which you want to automate performance tests</h3>
+                                <div class="select-box">
+                                    <label>Applications and Protocols</label>
+                                    <select class="basic-multiple" name="technical_perf_apps" id="perfApp" multiple="multiple" style="width:100%">
+                                        <option value="db">Databases (non-Oracle)</option>
+                                        <option value="files">Files</option>
+                                        <option value="ftp">FTP</option>
+                                        <option value="http">HTTP/HTTPS</option>
+                                        <option value="rest">REST</option>
+                                        <option value="soap">SOAP</option>
+                                        <option value="oracle">Oracle</option>
+                                        <option value="peoplesoft">PeopleSoft</option>
+                                        <option value="mails">POP3/SMTP/IMAP</option>
+                                        <option value="sap">SAP</option>
+                                        <option value="siebel">Siebel</option>
+                                        <option value="tcp">TCP</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div id="ques29" class="item">
+
+                            <h3>Select the type of performance tests you want to automate</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types-1" name="technical_perf_types" value="load">
+                                        <label for="technical_perf_types-1">Load</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types-2" name="technical_perf_types" value="stress" >
+                                        <label for="technical_perf_types-2">Stress</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types-3" name="technical_perf_types" value="volume">
+                                        <label for="technical_perf_types-3">Volume</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types1-4" name="technical_perf_types" value="spike">
+                                        <label for="technical_perf_types1-4">Spike</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types1-5" name="technical_perf_types" value="endurance" >
+                                        <label for="technical_perf_types1-5">Endurance</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="technical_perf_types1-6" name="technical_perf_types" value="scalability" >
+                                        <label for="technical_perf_types1-6">Scalability</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div id="ques210" class="item">
+                            <h3>Do you want to integrate your test automation framework with any continuous integration tool?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container small">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_integration-1" name="technical_CI_integration" value="true" onclick="answersoption()">
+                                        <label for="technical_CI_integration-1">Yes </label>
+                                    </div>
+                                    <div class="checkbox-block" >
+                                        <input type="radio" id="technical_CI_integration-2" name="technical_CI_integration"value="false"  onclick="answers()">
+                                        <label for="technical_CI_integration-2">No </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ques211" class="item">
+
+                            <h3>Which CI tool would you like to integrate your automation framework with?</h3>
+                            <div class="user-intro">
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool-1" name="technical_CI_tool" value="jenkins">
+                                        <label for="technical_CI_tool-1">Jenkins </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool-2" name="technical_CI_tool" value="team_city" >
+                                        <label for="technical_CI_tool-2">Team City </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool-3" name="technical_CI_tool" value="cruise_control">
+                                        <label for="technical_CI_tool-3">Cruise Control </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool1-4" name="technical_CI_tool" value="gocd">
+                                        <label for="technical_CI_tool1-4">GoCD </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool1-5" name="technical_CI_tool" value="vsts" >
+                                        <label for="technical_CI_tool1-5">VSTS </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="technical_CI_tool1-6" name="technical_CI_tool" value="unknown" >
+                                        <label for="technical_CI_tool1-6">Not Sure </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <!-- <div class="tab-pane fade  in active" id='current-skin-care'> -->
+                
+
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="step-buttons-container">
+    <div class="step-nav">
+	<button class="form-item-changer nav-btn prev-btn" btn-type="prev" onclick="backinthree()">Back</button>
+	<button id="nextbutton" class="form-item-changer nav-btn next-btn" onclick="answers2()">Next</button>
+	</div>
+    </section>
+    <!--build:js assets/js/step-form.min.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/tyle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!--endbuild-->
+    <script>
+    console.log("hvsdjf")
+    
+    localStorage.setItem("onFinishOne", "")
+        $(document).ready(function () {
+        	var backclick=localStorage.getItem("backclick");
+        	if(backclick === "yes"){
+        		console.log("dependency() called")
+        		dependeency()
+        	}
+        	localStorage.setItem("backclick","");
+          //  dependeency()
+            $('.tyle-container').tyle({
+                showProgressCount: true,
+                onFinish:function(){
+                	localStorage.setItem("onOnfinish", "two")
+                    window.location='automation-tool-3.html';
+                }
+            });
+            $(".basic-multiple").select2({
+                theme: "classic"
+            });
+        })
+        $('.skin-issues .form-item-changer').click(function(){
+           $(this).children('.selected').css({display:"block"});
+           $(this).siblings().children('.selected').css({display:"none"});
+        })
+        </script>
+        </body>
+
+        </html>

@@ -1,0 +1,11 @@
+@import 'partials/common';
+@import 'partials/_landing';
+@import 'partials/_dev-center';
+
+.fancybox-slide
+{
+    width: 680px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

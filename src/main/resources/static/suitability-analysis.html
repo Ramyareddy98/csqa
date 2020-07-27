@@ -1,0 +1,1684 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png" >
+    <title>Automation Suitability Analysis - CloudScale QA</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!--build:css assets/css/step-form.min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/remodal.css">
+    <link rel="stylesheet" href="assets/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="assets/css/tyle.css">
+
+    <link rel="stylesheet" href="assets/css/step-form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="Scripts/loginscript.js"></script>
+	 <script type="text/javascript" src="suitability-analysis.js"></script>
+	 <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-default affix">
+
+            <div class="container">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+
+                                                <span class="icon-bar"></span>
+
+                                                <span class="icon-bar"></span>
+
+                                                <span class="icon-bar"></span> 
+
+                                    </button>
+
+                        <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand"><img src="assets/images/logo-black.png"></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 page-title">
+                    <h3>Automation Suitability Analysis</h3>
+                </div>
+                <div class="col-md-4 col-lg-4 page-close">
+                    <div class="close-steps">
+                        <a href="index.html"><img src="assets/images/close.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="tyle-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 sec-1">
+                   
+					 <div class="tyle-container">
+                        <div class="item active f-e">
+                            <h3>Select the Products for your Automation Suitability Analysis</h3>
+                            <div class="user-intro name">
+								<form id="q1form">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input1">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input2">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input3">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input4">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input5">
+									<input type="text" class="form-control" placeholder="Enter Product/App Name" id="input6">
+								</form>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>How critical is this app?</h3>
+                                <div class="checkbox-container" id="q1app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis"	 id="q1app1" >App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio1-1" name="radios1" value="5" checked="">
+                                        <label for="radio1-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio1-2" name="radios1" value="2">
+                                        <label for="radio1-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio1-3" name="radios1" value="-5">
+                                        <label for="radio1-3">Low</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q1app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q1app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio2-1" name="radios2" value="5" checked="">
+                                        <label for="radio2-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio2-2" name="radios2" value="2">
+                                        <label for="radio2-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio2-3" name="radios2" value="-5">
+                                        <label for="radio2-3">Low</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q1app3_div" >
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q1app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio3-1" name="radios3" value="5" checked="">
+                                        <label for="radio3-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio3-2" name="radios3" value="2">
+                                        <label for="radio3-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio3-3" name="radios3" value="-5">
+                                        <label for="radio3-3">Low</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q1app4_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q1app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio4-1" name="radios4" value="5" checked="">
+                                        <label for="radio4-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio4-2" name="radios4" value="2">
+                                        <label for="radio4-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio4-3" name="radios4" value="-5">
+                                        <label for="radio4-3">Low</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q1app5_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q1app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio5-1" name="radios5" value="5" checked="">
+                                        <label for="radio5-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio5-2" name="radios5" value="2">
+                                        <label for="radio5-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio5-3" name="radios5" value="-5">
+                                        <label for="radio5-3">Low</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q1app6_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q1app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio6-1" name="radios6" value="5" checked="">
+                                        <label for="radio6-1">High</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio6-2" name="radios6" value="2">
+                                        <label for="radio6-2">Medium</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="radio6-3" name="radios6" value="-5">
+                                        <label for="radio6-3">Low</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>Do you have to roll-back production releases or make emergency releases?</h3>
+                                <div class="checkbox-container" id="q2app1_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback1-1" name="rollback1" value="-5" checked="">
+                                        <label for="rollback1-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback1-2" name="rollback1" value="2">
+                                        <label for="rollback1-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback1-3" name="rollback1" value="5">
+                                        <label for="rollback1-3">Often</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q2app2_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback2-1" name="rollback2" value="-5" checked="">
+                                        <label for="rollback2-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback2-2" name="rollback2" value="2">
+                                        <label for="rollback2-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback2-3" name="rollback2" value="5">
+                                        <label for="rollback2-3">Often</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q2app3_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback3-1" name="rollback3" value="-5" checked="">
+                                        <label for="rollback3-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback3-2" name="rollback3" value="2">
+                                        <label for="rollback3-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback3-3" name="rollback3" value="5">
+                                        <label for="rollback3-3">Often</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q2app4_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback4-1" name="rollback4" value="-5" checked="">
+                                        <label for="rollback4-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback4-2" name="rollback4" value="2">
+                                        <label for="rollback4-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback4-3" name="rollback4" value="5">
+                                        <label for="rollback4-3">Often</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q2app5_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback5-1" name="rollback5" value="-5" checked="">
+                                        <label for="rollback5-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback5-2" name="rollback5" value="2">
+                                        <label for="rollback5-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback5-3" name="rollback5" value="5">
+                                        <label for="rollback5-3">Often</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q2app6_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q2app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback6-1" name="rollback6" value="-5" checked="">
+                                        <label for="rollback6-1">Rarely</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback6-2" name="rollback6" value="2">
+                                        <label for="rollback6-2">Sometimes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="rollback6-3" name="rollback6" value="5">
+                                        <label for="rollback6-3">Often</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>What is the expected remaining life span of the app?</h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q3app1_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q3app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan1-1" name="lifespan1" value="-5">
+                                        <label for="lifespan1-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan1-2" name="lifespan1" value="2" checked="">
+                                        <label for="lifespan1-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan1-3" name="lifespan1" value="5">
+                                        <label for="lifespan1-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q3app2_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q3app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan2-1" name="lifespan2" value="-5">
+                                        <label for="lifespan2-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan2-2" name="lifespan2" value="2" checked="">
+                                        <label for="lifespan2-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan2-3" name="lifespan2" value="5">
+                                        <label for="lifespan2-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q3app3_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q3app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan3-1" name="lifespan3" value="-5">
+                                        <label for="lifespan3-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan3-2" name="lifespan3" value="2" checked="">
+                                        <label for="lifespan3-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan3-3" name="lifespan3" value="5">
+                                        <label for="lifespan3-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q3app4_div">
+                                    <span  class="checkbox-title suitabilityAnalysis" id="q3app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan4-1" name="lifespan4" value="-5">
+                                        <label for="lifespan4-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan4-2" name="lifespan4" value="2" checked="">
+                                        <label for="lifespan4-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan4-3" name="lifespan4" value="5">
+                                        <label for="lifespan4-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q3app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q3app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan5-1" name="lifespan5" value="-5">
+                                        <label for="lifespan5-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan5-2" name="lifespan5" value="2" checked="">
+                                        <label for="lifespan5-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan5-3" name="lifespan5" value="5">
+                                        <label for="lifespan5-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q3app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q3app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan6-1" name="lifespan6" value="-5">
+                                        <label for="lifespan6-1"> &lt;= 2 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan6-2" name="lifespan6" value="2" checked="">
+                                        <label for="lifespan6-2">2-5 Years</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="lifespan6-3" name="lifespan6" value="5">
+                                        <label for="lifespan6-3">&gt; 5 Years</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>How frequently do you release a new version of app? </h3>
+                                <div class="checkbox-container" id="q4app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion1-1" name="newversion1" value="-5"checked="">
+                                        <label for="newversion1-1">1 per quarter </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion1-2" name="newversion1" value="2">
+                                        <label for="newversion1-2">2 per quarter </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion1-3" name="newversion1" value="5">
+                                        <label for="newversion1-3"> &gt; 2 per quarter </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q4app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion2-1" name="newversion2" value="-5" checked="">
+                                        <label for="newversion2-1">1 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion2-2" name="newversion2" value="2">
+                                        <label for="newversion2-2">2 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion2-3" name="newversion2" value="5">
+                                        <label for="newversion2-3">&gt; 2 per quarter</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q4app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion3-1" name="newversion3" value="-5" checked="">
+                                        <label for="newversion3-1">1 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion3-2" name="newversion3" value="2">
+                                        <label for="newversion3-2">2 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion3-3" name="newversion3" value="5">
+                                        <label for="newversion3-3"> &gt; 2 per quarter</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q4app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion4-1" name="newversion4" value="-5" checked="">
+                                        <label for="newversion4-1">1 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion4-2" name="newversion4" value="2">
+                                        <label for="newversion4-2">2 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion4-3" name="newversion4" value="5">
+                                        <label for="newversion4-3">&gt; 2 per quarter</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q4app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion5-1" name="newversion5" value="-5" checked="">
+                                        <label for="newversion5-1">1 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion5-2" name="newversion5" value="2">
+                                        <label for="newversion5-2">2 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion5-3" name="newversion5" value="5">
+                                        <label for="newversion5-3">&gt; 2 per quarter</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q4app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q4app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion6-1" name="newversion6" value="-5" checked="">
+                                        <label for="newversion6-1">1 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion6-2" name="newversion6" value="2">
+                                        <label for="newversion6-2">2 per quarter</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="newversion6-3" name="newversion6" value="5">
+                                        <label for="newversion6-3">&gt; 2 per quarter</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <h3>How many test cycles are you able to run per release?</h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q5app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles1-1" name="testcycles1" value="-5">
+                                        <label for="testcycles1-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles1-2" name="testcycles1" value="2" checked="">
+                                        <label for="testcycles1-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles1-3" name="testcycles1" value="5">
+                                        <label for="testcycles1-3">1 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q5app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles2-1" name="testcycles2" value="-5">
+                                        <label for="testcycles2-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles2-2" name="testcycles2" value="2" checked="">
+                                        <label for="testcycles2-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles2-3" name="testcycles2" value="5">
+                                        <label for="testcycles2-3">1 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q5app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles3-1" name="testcycles3" value="-5">
+                                        <label for="testcycles3-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles3-2" name="testcycles3" value="2" checked="">
+                                        <label for="testcycles3-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles3-3" name="testcycles3" value="5">
+                                        <label for="testcycles3-3">1 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q5app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles4-1" name="testcycles4" value="-5">
+                                        <label for="testcycles4-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles4-2" name="testcycles4" value="2" checked="">
+                                        <label for="testcycles4-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles4-3" name="testcycles4" value="5">
+                                        <label for="testcycles4-3">1 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q5app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles5-1" name="testcycles5" value="-5">
+                                        <label for="testcycles5-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles5-2" name="testcycles5" value="2" checked="">
+                                        <label for="testcycles5-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles5-3" name="testcycles5" value="5">
+                                        <label for="testcycles5-3">1 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q5app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q5app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles6-1" name="testcycles6" value="-5">
+                                        <label for="testcycles6-1">&gt;3 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles6-2" name="testcycles6" value="2" checked="">
+                                        <label for="testcycles6-2">3-2 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testcycles6-3" name="testcycles6" value="5">
+                                        <label for="testcycles6-3">1 </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>How many target environments on which you execute tests?</h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q6app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments1-1" name="targetenvironments1" value="-5">
+                                        <label for="targetenvironments1-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments1-2" name="targetenvironments1" value="2" checked="">
+                                        <label for="targetenvironments1-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments1-3" name="targetenvironments1" value="5">
+                                        <label for="targetenvironments1-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q6app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments2-1" name="targetenvironments2" value="-5">
+                                        <label for="targetenvironments2-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments2-2" name="targetenvironments2" value="2" checked="">
+                                        <label for="targetenvironments2-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments2-3" name="targetenvironments2" value="5">
+                                        <label for="targetenvironments2-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q6app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments3-1" name="targetenvironments3" value="-5">
+                                        <label for="targetenvironments3-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments3-2" name="targetenvironments3" value="2" checked="">
+                                        <label for="targetenvironments3-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments3-3" name="targetenvironments3" value="5">
+                                        <label for="targetenvironments3-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q6app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments4-1" name="targetenvironments4" value="-5">
+                                        <label for="targetenvironments4-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments4-2" name="targetenvironments4" value="2" checked="">
+                                        <label for="targetenvironments4-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments4-3" name="targetenvironments4" value="5">
+                                        <label for="targetenvironments4-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q6app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments5-1" name="targetenvironments5" value="-5">
+                                        <label for="targetenvironments5-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments5-2" name="targetenvironments5" value="2" checked="">
+                                        <label for="targetenvironments5-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments5-3" name="targetenvironments5" value="5">
+                                        <label for="targetenvironments5-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q6app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q6app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments6-1" name="targetenvironments6" value="-5">
+                                        <label for="targetenvironments6-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments6-2" name="targetenvironments6" value="2" checked="">
+                                        <label for="targetenvironments6-2"> 2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="targetenvironments6-3" name="targetenvironments6" value="5">
+                                        <label for="targetenvironments6-3"> &gt; 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>How many sprint teams do you have? </h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q7app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q7app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam1-1" name="sprintTeam1" value="-5">
+                                        <label for="sprintTeam1-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam1-2" name="sprintTeam1" value="2" checked="">
+                                        <label for="sprintTeam1-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam1-3" name="sprintTeam1" value=">3">
+                                        <label for="sprintTeam1-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container"  id="q7app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q7app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam2-1" name="sprintTeam2" value="-5">
+                                        <label for="sprintTeam2-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam2-2" name="sprintTeam2" value="2" checked="">
+                                        <label for="sprintTeam2-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam2-3" name="sprintTeam2" value="5">
+                                        <label for="sprintTeam2-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container"  id="q7app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q7app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam3-1" name="sprintTeam3" value="-5">
+                                        <label for="sprintTeam3-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam3-2" name="sprintTeam3" value="2" checked="">
+                                        <label for="sprintTeam3-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam3-3" name="sprintTeam3" value="5">
+                                        <label for="sprintTeam3-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container"  id="q7app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q7app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam4-1" name="sprintTeam4" value="-5">
+                                        <label for="sprintTeam4-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam4-2" name="sprintTeam4" value="2" checked="">
+                                        <label for="sprintTeam4-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam4-3" name="sprintTeam4" value="5">
+                                        <label for="sprintTeam4-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container"  id="q7app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q7app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam5-1" name="sprintTeam5" value="-5">
+                                        <label for="sprintTeam5-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam5-2" name="sprintTeam5" value="2" checked="">
+                                        <label for="sprintTeam5-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam5-3" name="sprintTeam5" value="5">
+                                        <label for="sprintTeam5-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container"  id="q7app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q7app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam6-1" name="sprintTeam6" value="-5">
+                                        <label for="sprintTeam6-1"> 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam6-2" name="sprintTeam6" value="2" checked="">
+                                        <label for="sprintTeam6-2">2-3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="sprintTeam6-3" name="sprintTeam6" value="5">
+                                        <label for="sprintTeam6-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>Do you use CI / CD (Continuous Integration / Continuous Delivery) pipeline for the app? </h3>
+                            <div class="user-intro full-label big-width" >
+                                <div class="checkbox-container"  id="q8app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis"  id="q8app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline1-2" name="pipeline1" value="-5">
+                                        <label for="pipeline1-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline1-1" name="pipeline1" value="2">
+                                        <label for="pipeline1-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline1-3" name="pipeline1" value="5" checked="">
+                                        <label for="pipeline1-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q8app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q8app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline2-2" name="pipeline2" value="-5">
+                                        <label for="pipeline2-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline2-1" name="pipeline2" value="2">
+                                        <label for="pipeline2-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline2-3" name="pipeline2" value="5" checked="">
+                                        <label for="pipeline2-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q8app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q8app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline3-2" name="pipeline3" value="-5">
+                                        <label for="pipeline3-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline3-1" name="pipeline3" value="2">
+                                        <label for="pipeline3-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline3-3" name="pipeline3" value="5" checked="">
+                                        <label for="pipeline3-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q8app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q8app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline4-2" name="pipeline4" value="-5">
+                                        <label for="pipeline4-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline4-1" name="pipeline4" value="2">
+                                        <label for="pipeline4-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline4-3" name="pipeline4" value="5" checked="">
+                                        <label for="pipeline4-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q8app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q8app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline5-2" name="pipeline5" value="-5">
+                                        <label for="pipeline5-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline5-1" name="pipeline5" value="2">
+                                        <label for="pipeline5-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline5-3" name="pipeline5" value="5" checked="">
+                                        <label for="pipeline5-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q8app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q8app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline6-2" name="pipeline6" value="-5">
+                                        <label for="pipeline6-2">No</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline6-1" name="pipeline6" value="2">
+                                        <label for="pipeline6-1">Yes (Not fully developed)</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="pipeline6-3" name="pipeline6" value="5" checked="">
+                                        <label for="pipeline6-3">Yes (fully developed)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>Does your app have desktop, web, mobile (or both) clients?</h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q9app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients1-1" name="clients1" value="5">
+                                        <label for="clients1-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients1-2" name="clients1" value="5" checked="">
+                                        <label for="clients1-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients1-3" name="clients1" value="5">
+                                        <label for="clients1-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients1-4" name="clients1" value="true">
+                                        <label for="clients1-4">Multiple</label>
+                                    </div> -->
+                                </div>
+                                <div class="checkbox-container" id="q9app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients2-1" name="clients2" value="5">
+                                        <label for="clients2-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients2-2" name="clients2" value="5" checked="">
+                                        <label for="clients2-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients2-3" name="clients2" value="5">
+                                        <label for="clients2-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients2-4" name="clients2" value="true">
+                                        <label for="clients2-4">Multiple</label>
+                                    </div> -->
+                                </div>
+                                <div class="checkbox-container" id="q9app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients3-1" name="clients3" value="5">
+                                        <label for="clients3-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients3-2" name="clients3" value="5" checked="">
+                                        <label for="clients3-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients3-3" name="clients3" value="5">
+                                        <label for="clients3-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients3-4" name="clients3" value="true">
+                                        <label for="clients3-4">Multiple</label>
+                                    </div> -->
+                                </div>
+                                <div class="checkbox-container" id="q9app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients4-1" name="clients4" value="5">
+                                        <label for="clients4-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients4-2" name="clients4" value="5" checked="">
+                                        <label for="clients4-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients4-3" name="clients4" value="5">
+                                        <label for="clients4-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients4-4" name="clients4" value="true">
+                                        <label for="clients4-4">Multiple</label>
+                                    </div> -->
+                                </div>
+                                <div class="checkbox-container" id="q9app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients5-1" name="clients5" value="5">
+                                        <label for="clients5-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients5-2" name="clients5" value="5" checked="">
+                                        <label for="clients5-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients5-3" name="clients5" value="5">
+                                        <label for="clients5-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients5-4" name="clients5" value="true">
+                                        <label for="clients5-4">Multiple</label>
+                                    </div> -->
+                                </div>
+								 <div class="checkbox-container" id="q9app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q9app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients6-1" name="clients6" value="5">
+                                        <label for="clients6-1">Desktop</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients6-2" name="clients6" value="5" checked="">
+                                        <label for="clients6-2">Web</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" id="clients6-3" name="clients6" value="5">
+                                        <label for="clients6-3">Mobile</label>
+                                    </div>
+<!--                                     <div class="checkbox-block">
+                                        <input type="checkbox" id="clients6-4" name="clients6" value="true">
+                                        <label for="clients6-4">Multiple</label>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>How many legacy systems or external services does your app interact with?</h3>
+                            <div class="user-intro big-width">
+                                <div class="checkbox-container" id="q10app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems1-1" name="legacysystems1" value="-5">
+                                        <label for="legacysystems1-1"> Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems1-2" name="legacysystems1" value="2" checked="">
+                                        <label for="legacysystems1-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems1-3" name="legacysystems1" value="5">
+                                        <label for="legacysystems1-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q10app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems2-1" name="legacysystems2" value="-5">
+                                        <label for="legacysystems2-1">Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems2-2" name="legacysystems2" value="2" checked="">
+                                        <label for="legacysystems2-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems2-3" name="legacysystems2" value="5">
+                                        <label for="legacysystems2-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q10app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems3-1" name="legacysystems3" value="-5">
+                                        <label for="legacysystems3-1"> Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems3-2" name="legacysystems3" value="2" checked="">
+                                        <label for="legacysystems3-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems3-3" name="legacysystems3" value="5">
+                                        <label for="legacysystems3-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q10app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems4-1" name="legacysystems4" value="-5">
+                                        <label for="legacysystems4-1"> Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems4-2" name="legacysystems4" value="2" checked="">
+                                        <label for="legacysystems4-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems4-3" name="legacysystems4" value="5">
+                                        <label for="legacysystems4-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q10app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems5-1" name="legacysystems5" value="-5">
+                                        <label for="legacysystems5-1"> Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems5-2" name="legacysystems5" value="2" checked="">
+                                        <label for="legacysystems5-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems5-3" name="legacysystems5" value="5">
+                                        <label for="legacysystems5-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q10app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q10app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems6-1" name="legacysystems6" value="-5">
+                                        <label for="legacysystems6-1"> Up to 1</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems6-2" name="legacysystems6" value="2" checked="">
+                                        <label for="legacysystems6-2">1 to 3</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="legacysystems6-3" name="legacysystems6" value="5">
+                                        <label for="legacysystems6-3">&gt; 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>How frequently does your app’s specification change?</h3>
+                                <div class="checkbox-container" id="q11app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications1-1" name="specifications1" value="-5" checked="">
+                                        <label for="specifications1-1">Few changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications1-2" name="specifications1" value="2">
+                                        <label for="specifications1-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications1-3" name="specifications1" value="5">
+                                        <label for="specifications1-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q11app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications2-1" name="specifications2" value="-5" checked="">
+                                        <label for="specifications2-1">Few changes</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications2-2" name="specifications2" value="2">
+                                        <label for="specifications2-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications2-3" name="specifications2" value="5">
+                                        <label for="specifications2-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q11app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications3-1" name="specifications3" value="-5" checked="">
+                                        <label for="specifications3-1">Few changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications3-2" name="specifications3" value="2">
+                                        <label for="specifications3-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications3-3" name="specifications3" value="5">
+                                        <label for="specifications3-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q11app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications4-1" name="specifications4" value="-5" checked="">
+                                        <label for="specifications4-1">Few changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications4-2" name="specifications4" value="2">
+                                        <label for="specifications4-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications4-3" name="specifications4" value="5">
+                                        <label for="specifications4-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q11app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications5-1" name="specifications5" value="-5" checked="">
+                                        <label for="specifications5-1">Few changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications5-2" name="specifications5" value="2">
+                                        <label for="specifications5-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications5-3" name="specifications5" value="5">
+                                        <label for="specifications5-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q11app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q11app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications6-1" name="specifications6" value="-5" checked="">
+                                        <label for="specifications6-1">Few changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications6-2" name="specifications6" value="2">
+                                        <label for="specifications6-2">Moderate changes </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="specifications6-3" name="specifications6" value="5">
+                                        <label for="specifications6-3">Lot of changes </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>Approximately how many functional test scenarios are there for the app?</h3>
+                                <div class="checkbox-container" id="q12app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest1-1" name="functionalTest1" value="-5" checked="">
+                                        <label for="functionalTest1-1">&lt;50 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest1-2" name="functionalTest1" value="2">
+                                        <label for="functionalTest1-2">50 - 200 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest1-3" name="functionalTest1" value="5">
+                                        <label for="functionalTest1-3">&gt; 200 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q12app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest2-1" name="functionalTest2" value="-5" checked="">
+                                        <label for="functionalTest2-1">&lt;50</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest2-2" name="functionalTest2" value="2">
+                                        <label for="functionalTest2-2">50 - 200</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest2-3" name="functionalTest2" value="5">
+                                        <label for="functionalTest2-3">&gt; 200</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q12app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest3-1" name="functionalTest3" value="-5" checked="">
+                                        <label for="functionalTest3-1">&lt;50</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest3-2" name="functionalTest3" value="2">
+                                        <label for="functionalTest3-2">50 - 200</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest3-3" name="functionalTest3" value="5">
+                                        <label for="functionalTest3-3">&gt; 200</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q12app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest4-1" name="functionalTest4" value="-5" checked="">
+                                        <label for="functionalTest4-1">&lt;50</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest4-2" name="functionalTest4" value="2">
+                                        <label for="functionalTest4-2">50 - 200</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest4-3" name="functionalTest4" value="5">
+                                        <label for="functionalTest4-3">&gt; 200</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q12app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest5-1" name="functionalTest5" value="-5" checked="">
+                                        <label for="functionalTest5-1">&lt;50</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest5-2" name="functionalTest5" value="2">
+                                        <label for="functionalTest5-2">50 - 200</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest5-3" name="functionalTest5" value="5">
+                                        <label for="functionalTest5-3">&gt; 200</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q12app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q12app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest6-1" name="functionalTest6" value="-5" checked="">
+                                        <label for="functionalTest6-1">&lt;50</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest6-2" name="functionalTest6" value="2">
+                                        <label for="functionalTest6-2">50 - 200</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="functionalTest6-3" name="functionalTest6" value="5">
+                                        <label for="functionalTest6-3">&gt; 200</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>Approximately how many non-functional test scenarios are there for the app?</h3>
+                                <div class="checkbox-container" id="q13app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest1-1" name="nonFunctionalTest1" value="-5" checked="">
+                                        <label for="nonFunctionalTest1-1">&lt;5 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest1-2" name="nonFunctionalTest1" value="2">
+                                        <label for="nonFunctionalTest1-2">5-20 </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest1-3" name="nonFunctionalTest1" value="5">
+                                        <label for="nonFunctionalTest1-3">&gt; 20 </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q13app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest2-1" name="nonFunctionalTest2" value="-5" checked="">
+                                        <label for="nonFunctionalTest2-1">&lt;5</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest2-2" name="nonFunctionalTest2" value="2">
+                                        <label for="nonFunctionalTest2-2">5-20</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest2-3" name="nonFunctionalTest2" value="5">
+                                        <label for="nonFunctionalTest2-3">&gt; 20</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q13app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest3-1" name="nonFunctionalTest3" value="-5" checked="">
+                                        <label for="nonFunctionalTest3-1">&lt;5</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest3-2" name="nonFunctionalTest3" value="2">
+                                        <label for="nonFunctionalTest3-2">5-20</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest3-3" name="nonFunctionalTest3" value="5">
+                                        <label for="nonFunctionalTest3-3">&gt; 20</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q13app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest4-1" name="nonFunctionalTest4" value="-5" checked="">
+                                        <label for="nonFunctionalTest4-1">&lt;5</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest4-2" name="nonFunctionalTest4" value="2">
+                                        <label for="nonFunctionalTest4-2">5-20</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest4-3" name="nonFunctionalTest4" value="5">
+                                        <label for="nonFunctionalTest4-3">&gt; 20</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q13app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest5-1" name="nonFunctionalTest5" value="-5" checked="">
+                                        <label for="nonFunctionalTest5-1">&lt;5</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest5-2" name="nonFunctionalTest5" value="2">
+                                        <label for="nonFunctionalTest5-2">5-20</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest5-3" name="nonFunctionalTest5" value="5">
+                                        <label for="nonFunctionalTest5-3">&gt; 20</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q13app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q13app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest6-1" name="nonFunctionalTest6" value="-5" checked="">
+                                        <label for="nonFunctionalTest6-1">&lt;5</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest6-2" name="nonFunctionalTest6" value="2">
+                                        <label for="nonFunctionalTest6-2">5-20</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="nonFunctionalTest6-3" name="nonFunctionalTest6" value="5">
+                                        <label for="nonFunctionalTest6-3">&gt; 20</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>How complex is the test data? </h3>
+                                <div class="checkbox-container" id="q14app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation1-1" name="dataCreation1" value="-5" checked="">
+                                        <label for="dataCreation1-1">Not Complex </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation1-2" name="dataCreation1" value="2">
+                                        <label for="dataCreation1-2">Complex </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation1-3" name="dataCreation1" value="5">
+                                        <label for="dataCreation1-3">Highly Complex </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q14app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation2-1" name="dataCreation2" value="-5" checked="">
+                                        <label for="dataCreation2-1">Not Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation2-2" name="dataCreation2" value="2">
+                                        <label for="dataCreation2-2">Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation2-3" name="dataCreation2" value="5">
+                                        <label for="dataCreation2-3">Highly Complex</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q14app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation3-1" name="dataCreation3" value="-5" checked="">
+                                        <label for="dataCreation3-1">Not Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation3-2" name="dataCreation3" value="2">
+                                        <label for="dataCreation3-2">Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation3-3" name="dataCreation3" value="5">
+                                        <label for="dataCreation3-3">Highly Complex</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q14app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation4-1" name="dataCreation4" value="-5" checked="">
+                                        <label for="dataCreation4-1">Not Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation4-2" name="dataCreation4" value="2">
+                                        <label for="dataCreation4-2">Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation4-3" name="dataCreation4" value="5">
+                                        <label for="dataCreation4-3">Highly Complex</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q14app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation5-1" name="dataCreation5" value="-5" checked="">
+                                        <label for="dataCreation5-1">Not Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation5-2" name="dataCreation5" value="2">
+                                        <label for="dataCreation5-2">Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation5-3" name="dataCreation5" value="5">
+                                        <label for="dataCreation5-3">Highly Complex</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q14app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q14app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation6-1" name="dataCreation6" value="-5" checked="">
+                                        <label for="dataCreation6-1">Not Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation6-2" name="dataCreation6" value="2">
+                                        <label for="dataCreation6-2">Complex</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="dataCreation6-3" name="dataCreation6" value="5">
+                                        <label for="dataCreation6-3">Highly Complex</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro big-width">
+                                <h3>Is your QA team skilled in automation tools? </h3>
+                                <div class="checkbox-container" id="q15app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools1-1" name="automationTools1" value="-5" checked="">
+                                        <label for="automationTools1-1">Highly Skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools1-2" name="automationTools1" value="2">
+                                        <label for="automationTools1-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools1-3" name="automationTools1" value="5">
+                                        <label for="automationTools1-3">Not skilled </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q15app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools2-1" name="automationTools2" value="-5" checked="">
+                                        <label for="automationTools2-1">Highly Skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools2-2" name="automationTools2" value="2">
+                                        <label for="automationTools2-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools2-3" name="automationTools2" value="5">
+                                        <label for="automationTools2-3">Not skilled </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q15app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools3-1" name="automationTools3" value="-5" checked="">
+                                        <label for="automationTools3-1">Highly Skilled</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools3-2" name="automationTools3" value="2">
+                                        <label for="automationTools3-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools3-3" name="automationTools3" value="5">
+                                        <label for="automationTools3-3">Not skilled </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q15app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools4-1" name="automationTools4" value="-5" checked="">
+                                        <label for="automationTools4-1">Highly Skilled</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools4-2" name="automationTools4" value="2">
+                                        <label for="automationTools4-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools4-3" name="automationTools4" value="5">
+                                        <label for="automationTools4-3">Not skilled </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q15app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools5-1" name="automationTools5" value="-5" checked="">
+                                        <label for="automationTools5-1">Highly Skilled</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools5-2" name="automationTools5" value="2">
+                                        <label for="automationTools5-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools5-3" name="automationTools5" value="5">
+                                        <label for="automationTools5-3">Not skilled </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q15app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q15app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools6-1" name="automationTools6" value="-5" checked="">
+                                        <label for="automationTools6-1">Highly Skilled</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools6-2" name="automationTools6" value="2">
+                                        <label for="automationTools6-2">Moderately skilled </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="automationTools6-3" name="automationTools6" value="5">
+                                        <label for="automationTools6-3">Not skilled </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="user-intro  full-label big-width">
+                                <h3>Does your development team do any test activities ? </h3>
+                                <div class="checkbox-container" id="q16app1_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app1">App Name 1</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities1-1" name="testActivities1" value="-5" checked="">
+                                        <label for="testActivities1-1">Yes UNIT and API Tests </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities1-2" name="testActivities1" value="2">
+                                        <label for="testActivities1-2">Yes ONLY Unit Test </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities1-3" name="testActivities1" value="5">
+                                        <label for="testActivities1-3">No </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q16app2_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app2">App Name 2</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities2-1" name="testActivities2" value="-5" checked="">
+                                        <label for="testActivities2-1">Yes UNIT and API Tests </label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities2-2" name="testActivities2" value="2">
+                                        <label for="testActivities2-2">Yes ONLY Unit Test</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities2-3" name="testActivities2" value="5">
+                                        <label for="testActivities2-3">No</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q16app3_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app3">App Name 3</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities3-1" name="testActivities3" value="-5" checked="">
+                                        <label for="testActivities3-1">Yes UNIT and API Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities3-2" name="testActivities3" value="2">
+                                        <label for="testActivities3-2">Yes ONLY Unit Test</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities3-3" name="testActivities3" value="5">
+                                        <label for="testActivities3-3">No</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q16app4_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app4">App Name 4</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities4-1" name="testActivities4" value="-5" checked="">
+                                        <label for="testActivities4-1">Yes UNIT and API Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities4-2" name="testActivities4" value="2">
+                                        <label for="testActivities4-2">Yes ONLY Unit Test</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities4-3" name="testActivities4" value="5">
+                                        <label for="testActivities4-3">No</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q16app5_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app5">App Name 5</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities5-1" name="testActivities5" value="-5" checked="">
+                                        <label for="testActivities5-1">Yes UNIT and API Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities5-2" name="testActivities5" value="2">
+                                        <label for="testActivities5-2">Yes ONLY Unit Test</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities5-3" name="testActivities5" value="5">
+                                        <label for="testActivities5-3">No</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-container" id="q16app6_div">
+                                    <span class="checkbox-title suitabilityAnalysis" id="q16app6">App Name 6</span>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities6-1" name="testActivities6" value="-5" checked="">
+                                        <label for="testActivities6-1">Yes UNIT and API Tests</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities6-2" name="testActivities6" value="2">
+                                        <label for="testActivities6-2">Yes ONLY Unit Test</label>
+                                    </div>
+                                    <div class="checkbox-block">
+                                        <input type="radio" id="testActivities6-3" name="testActivities6" value="5">
+                                        <label for="testActivities6-3">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade  in active" id='current-skin-care'> -->
+
+
+                </div>
+
+            </div>
+        </div>
+        
+        
+        
+        <div class="close-steps">
+            <a href="index.html"><img src="assets/img/icons/close.png"></a>
+        </div>
+
+    </section>
+    <section class="step-buttons-container">
+    <div class="step-nav"><button class="form-item-changer nav-btn prev-btn" btn-type="prev" disabled="true">Back</button>
+	<button class="form-item-changer nav-btn next-btn" onclick="submitQuestionary()">Next</button>
+	</div>
+	</section>
+    
+    <!--build:js assets/js/step-form.min.js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/tyle.js"></script>
+    <script src="assets/js/svgImage.js"></script>
+    <script src="assets/js/remodal.js"></script>
+
+
+    <!--endbuild-->
+    <script>
+        $(document).ready(function () {
+            $('.tyle-container').tyle({
+                showProgressCount: true,
+                onFinish:function(){
+                    window.location='results.html'
+                }
+            });
+
+        })
+    </script>
+
+
+<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" data-remodal-options="hashTracking: false" tabindex="-1">
+
+    </div></div></body></html>

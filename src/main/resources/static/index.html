@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
+    <title>Cloud Scale QA</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+<meta name="google-signin-client_id" content="467617503613-usrsjj1siq7isun7so4kbeui67tcnab0.apps.googleusercontent.com">
+    build:css assets/css/main.min.css
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    endbuild
+    [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]
+							<script src="https://apis.google.com/js/platform.js?onload=onLoadGoogle" async defer></script> 
+							<script src="Scripts/loginscript.js"></script>					  
+    <script src="https://use.fontawesome.com/16c2dd0d8a.js"></script>
+												<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+		 -->	
+		 <script src="Scripts/loginscript.js"></script>									
+</head>
+<body onload="redirectToDevcenter()">
+<!-- 
+    <header>
+
+        <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a target="_blank" href="https://www.cloudscaleqa.com" class="navbar-brand">
+                        <img src="assets/images/logo.png">
+                    </a>
+
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="navbar1">
+                    <div class="nav navbar-nav menu-container">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="#">Our Services</a>
+                                    <ul>
+                                        <li>
+                                            <ul>
+                                                <li><a href="test-strategy.html">Test Strategy</a></li>
+                                                <li><a href="functional-testing.html">Functional Testing</a></li>
+                                                <li><a href="agile-testing.html">Agile Testing</a></li>
+                                                <li><a href="accessibility-testing.html">Accessibility Testing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="test-automation.html">Test Automation</a></li>
+                                                <li><a href="api-testing.html">API Testing</a></li>
+                                                <li><a href="mobility-testing.html">Mobility Testing</a></li>
+                                                <li><a href="performance-testing.html">Performance Testing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="security-testing.html">Security Testing</a></li>
+                                                <li><a href="dwh-etl-testing.html">DWH and ETL Testing</a></li>
+                                                <li><a href="iot-testing.html">IOT Testing</a></li>
+                                                <li><a href="digital-assurance.html">Digital Assurance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="sdet-talent.html">SDET Talent</a></li>
+                                                <li><a href="liquid-qa-workforce.html">Liquid QA Workforce</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="our-edge.html">Our Edge</a></li>
+                                <li><a href="#">DIY Assessment</a>
+                                    <ul>
+                                        <li><a href="reports-suitability-analysis.html">Automation Suitability Analysis</a></li>
+                                        <li><a href="reports-roi.html">Test Automation ROI calculator</a></li>  
+                                        <li><a href="reports-gap-analysis.html">CI/CD Maturity Assessment</a></li>
+                                        <li><a href="reports-automation-tool.html">Test Automation Tool Assessment</a></li>
+                                    </ul>
+                                </li>
+                                <li><a style="cursor: pointer;"  onclick="devcenter()">Dev Center</a></li>
+                                <li><a href="https://medium.com/cloudscale-qa">Blog</a></li>
+                               		      <li >
+                                        <a id="loginbtn" style="display:none;" data-fancybox data-width="600px" data-type="ajax" data-src="login-signup-modal.html" href="javascript:;" class="btn btn-custom btn-inverse fancy-popup">Login</a>
+                                        
+                                    </li>
+                                    <li id="logoutbtn" style="display:none;">
+                                     <a  data-width="600px"   class="btn btn-custom btn-inverse fancy-popup" onclick="logout()">Logout</a>
+                                     </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="banner">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="outer">
+
+                        <div class="inner">
+                            <h2 class="wow fadeInUp">Sharp. Smart. Smooth. Suave. Swift</h2>
+                            <div id="slider" class="wow fadeInUp">
+                                <h1>Software that Delights</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about-us home">
+
+        <div class="container">
+
+            <div class="row">
+                
+                <div class="col-md-12">
+
+                    <div class="about-text-small r1 wow fadeInUp">
+
+                        <p align="justify">As a next-generation, ahead-of-the-curve and robust continuous-testing-enablement platform, Loop is equipping many enterprises as they succeed to achieve seamless integration with CI/CD/DevOps ecosystems while arming their agile teams with a new found speed and flexibility.</p>
+                        
+                        
+
+                    </div>
+
+                    <div class="about-text-small r1 wow fadeInUp">
+                    <center><img src='assets/images/loop_overview.png'
+						width="100%" ></center>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="more-details">
+
+        <div class="container">
+            
+            <div class="row details-cont">
+
+                <div class="col-md-6 image-area wow fadeInUp">
+
+                    <img src='assets/images/automation.jpg' class="img-responsive">
+
+                </div>
+
+                <div class="col-md-6 details-area wow fadeInUp">
+
+                    <h4>Start your</h4>
+
+                    <h3>Test Automation Tool Assessment</h3>
+
+                    <p>Analyse quickly, precisely and in a wall-to-wall way - as to which test automation tool, technology, framework-combination will suit the application/technology stack you are concerned/excited about. No Waiting rooms here.</p>
+                    
+                    <a href="reports-automation-tool.html" class="btn btn-custom">Perform Test Automation Tool Assessment</a>
+                    <a href="" class="download-report"> Download Sample Report <img src="assets/images/pdf-icon.svg" class="img-responsive pdf-icon svgImage" alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="row details-cont">
+
+                <div class="col-md-6 col-md-push-6 image-area wow fadeInUp">
+
+                    <img src='assets/images/portfolio-analysis.jpg' class="img-responsive">
+
+                </div>
+
+                <div class="col-md-6 details-area col-md-pull-6 wow fadeInUp">
+
+                    <h4>Get Your</h4>
+
+                    <h3>Automation Suitability Analysis</h3>
+
+                    <p> An unbelievably-handy DIY assessment tool that can swiftly and smoothly plot the applications of the client into Low Cost-Low Risk, Low Cost-High Risk, High Cost-Low Risk, High Cost-High Risk quadrants. It does not miss any dots, mind you!</p>
+
+                    <a href="reports-suitability-analysis.html" class="btn btn-custom">Get your Portfolio Analysis</a>
+                    
+                    <a href="" class="download-report"> Download Sample Report <img src="assets/images/pdf-icon.svg" class="img-responsive pdf-icon svgImage" alt=""></a>
+
+                </div>
+
+            </div>
+
+            <div class="row details-cont">
+
+                <div class="col-md-6 image-area wow fadeInUp">
+
+                    <img src='assets/images/more-details/roi.jpg' class="img-responsive">
+
+                </div>
+
+                <div class="col-md-6 details-area wow fadeInUp">
+
+                    <h4>Know your</h4>
+
+                    <h3>Test Automation ROI</h3>
+
+                    <p>A Test Automation ROI calculator which makes it possible for you to ascertain the productivity, cost-outcomes and financial-gains of any intervention on the fly. Zip, zap, zoom...</p>
+
+                    <a href="reports-roi.html" class="btn btn-custom">Get Your Test Automation ROI Analysis</a>
+
+                    <a href="" class="download-report"> Download Sample Report <img src="assets/images/pdf-icon.svg" class="img-responsive pdf-icon svgImage" alt=""></a>
+
+                </div>
+
+            </div>
+
+            <div class="row details-cont">
+
+                <div class="col-md-6 col-md-push-6 image-area wow fadeInUp">
+
+                    <img src='assets/images/more-details/gap.jpg' class="img-responsive">
+
+                </div>
+
+                <div class="col-md-6 details-area col-md-pull-6 wow fadeInUp">
+
+                    <h4>How well are you managing your Continuous Delivery?</h4>
+
+                    <h3>CI/CD Maturity Assessment</h3>
+
+                    <p>An instrument that helps you to assess the current level of maturity related to CI/CD areas. In fact, there is more to it – it also provides direction to achieve higher levels of maturity, thus, helping you reach where you should aim instead of massaging complacence.</p>
+                    
+                    <a href="reports-gap-analysis.html" class="btn btn-custom">Get Your CI/CD Maturity Assessment</a>
+
+                    <a href="" class="download-report"> Download Sample Report <img src="assets/images/pdf-icon.svg" class="img-responsive pdf-icon svgImage" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="dev-resources home-page">
+            
+        <div class="container">
+
+            <h3 class="section-title">Success Stories</h3>
+
+            <div class="row" data-flickity='{ "contain": true , "prevNextButtons": false, "autoPlay": 3000}' >
+
+                <div class="col-md-4">
+
+                    <div class="resource-item wow fadeInUp" style="visibility: visible; animation-name: z;">
+                        <a href="blog-detail.html">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-1.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>Using Selenium to Test Mobile? Meet Appium!</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text.</p>
+                                <div class="resource-details">
+                                    <a href="#" class="category blue">Download PDF</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="resource-item wow fadeInUp" style="visibility: visible; animation-name: z;">
+                        <a href="blog-detail.html">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-2.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>Analytics, Machine Learning, and Remediation with Neil Manvar</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text.</p>
+                                <div class="resource-details">
+                                    <a href="#" class="category blue">Download PDF</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="resource-item wow fadeInUp" style="visibility: visible; animation-name: z;">
+                        <a href="blog-detail.html">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-3.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>An Introduction to Appium Desktop</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text.</p>
+                                <div class="resource-details">
+                                    <a href="#" class="category blue">Download PDF</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="col-md-4">
+
+                    <div class="resource-item wow fadeInUp" style="visibility: visible; animation-name: z;">
+                        <a href="blog-detail.html">
+                            <div class="resource-image">
+                                <img src="assets/images/resources/dev-resource-3.jpg">
+                            </div>
+                            <div class="resource-title">
+                                <h3>An Introduction to Appium Desktop</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text.</p>
+                                <div class="resource-details">
+                                    <a href="#" class="category blue">Download PDF</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about-us home">
+
+        <div class="container">
+
+            <div class="row">
+                
+                <div class="col-md-12">
+
+                    <div class="about-text-small r1 wow fadeInUp">
+
+                        <p>In this age where customers have turned extremely fast-heeled, impatient and hungry for technology-on-their-tips; it is, often, too challenging a jog to keep up with them. You need someone by your side to understand them and deliver for new needs fluidly, furiously-quick and flawlessly.</p>
+                        
+                        <p>Welcome to CloudscaleQA- The pit-stop for fast and furious software. </p>
+                        <p>We are as obsessed about serving application-leaders, makers and keepers; as they are about the digitally-fuelled users they serve.</p>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="services  wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="test-strategy.html">
+                                <div class="icon">
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                </div>
+                                <h4>Test Strategy</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="functional-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-binoculars"></i>
+                                </div>
+                                <h4>Functional Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="agile-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-history"></i>
+                                </div>
+                                <h4>Agile Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="accessibility-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-low-vision"></i>
+                                </div>
+                                <h4>Accessibility Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="test-automation.html">
+                                <div class="icon">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <h4>Test Automation</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="api-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>API Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="mobility-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <h4>Mobility Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="performance-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-tachometer"></i>
+                                </div>
+                                <h4>Performance Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="security-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-exclamation-triangle"></i>
+                                </div>
+                                <h4>Security Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="dwh-etl-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <h4>DWH and ETL Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="iot-testing.html">
+                                <div class="icon">
+                                    <i class="fa fa-microchip"></i>
+                                </div>
+                                <h4>IOT Testing</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="digital-assurance.html">
+                                <div class="icon">
+                                    <i class="fa fa-mixcloud"></i>
+                                </div>
+                                <h4>Digital Assurance</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="sdet-talent.html">
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <h4>SDET Talent</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service">
+                            <a href="liquid-qa-workforce.html">
+                                <div class="icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h4>Liquid QA Workforce</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="get-in-touch">
+
+        <div class="container">
+
+            <h1 class="section-title wow fadeInUp">Get In Touch With Us</h1>
+
+            <h3 class="sub-title wow fadeInUp">Stuck upon a testing challenge? Or scratching your head about a software/app problem? Allow us to shift your load. Leave us a note and our team will get in touch.</h3>
+
+            <form>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="First Name" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="Last Name" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="Company" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="Designation/Title" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="Email" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="form-group wow fadeInUp">
+
+                            <input type="text" class="form-control" placeholder="Phone Number" required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="btn btn-custom wow fadeInUp" type='submit'>Send</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-8">
+
+		    <p>Copyrights @ 2019 CloudScaleQA (A unit of CodeTantra Tech Solutions Pvt. Ltd.). All Rights Reserved.</p>
+
+                </div>
+
+                <div class="col-sm-4 text-right">
+
+                    <a href="#">
+                        <img src='assets/images/Facebook.svg'>
+                    </a>
+
+                    <a href="#">
+                        <img src='assets/images/Twitter.svg'>
+                    </a>
+
+                    <a href="#">
+                        <img src='assets/images/linkedin.svg'>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    build:js assets/js/main.min.js
+    <script src="assets/js/jquery-latest.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <script src="assets/js/svgImage.js"></script>
+							        <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+   																					  
+    <script>
+   
+		
+        $(document).ready(function () {
+            $('#slider').slick({
+                vertical: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                pauseOnHover: false
+            });
+
+            jQuery(window).scroll(function () {
+                if (jQuery("header nav").hasClass("affix")) {
+                    jQuery('.navbar-brand img').attr('src', 'assets/images/logo-black.png');
+                } else {
+                    jQuery('.navbar-brand img').attr('src', 'assets/images/logo.png');
+                }
+            });
+        })
+    </script>
+    endbuild
+</body>
+ -->
+</html>
